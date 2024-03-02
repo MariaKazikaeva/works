@@ -1,0 +1,44 @@
+body {
+    margin: 0;
+    padding: 0;
+    line-height: normal;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.header {
+    background-color: #97f597;
+}
+
+.header__wrapper {
+    columns: 3;
+    padding: 26px 0;
+}
+
+.header__button {
+    float: right;
+    margin: 25px 0;
+    font-weight: 600;
+    background-color: #46A358;
+    color: #fff;
+}
+
+.header__button::before {
+    content: "";
+    clear: both;
+}

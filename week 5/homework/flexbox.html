@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container,
+        .header,
+        .main,
+        .main_section,
+        .main_item,
+        .aside,
+        .footer,
+        .footer-item {
+            display: flex;
+        }
+        
+        .container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            flex-grow: 1;
+        }
+        .header {
+            display: flex;
+            height: 5vh;
+            width: 100%;
+            background-color: gainsboro;
+            font-size: larger;
+            justify-content: center;
+            align-items: center;
+        }
+        .main {
+            display: flex;
+            flex-direction: column;
+            height: 30vh;
+            width: 70%;
+            background-color: bisque;
+        }
+        .text {
+            display: flex;
+            justify-content: space-around;
+            font-size: larger;
+            padding: 10px;
+        }
+        .main_item_1and2 {
+            display: flex;
+            flex-flow: row wrap;
+            align-items: center;
+            justify-content: space-around;
+            height: 45px;
+            width: 40%;
+            margin: 20px;
+            background-color: darksalmon;
+        }
+        .main_item_3 {
+            display: flex;
+            flex-flow: row wrap;
+            align-items: center;
+            justify-content: space-around;
+            height: 50px;
+            width: 80%;
+            margin: 10px;
+            background-color: darksalmon;
+            
+        }
+        .main_section {
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: space-evenly;
+            margin: 10px;
+            
+        }
+        .aside {
+            display: flex;
+            flex-direction: row;
+            height: 30vh;
+            background-color: lightgreen;
+            flex-grow: 1;
+            justify-content: center;
+        }
+        .content {
+            display: flex;
+            justify-content: flex-start;
+        }
+        .footer {
+            display: flex;
+            justify-content: space-evenly;
+            background-color: lightgrey;
+        }
+        .footer_item {
+            display: flex;
+            background-color: ivory;
+            height: 50px;
+            padding: 5px;
+            align-items: center;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="header">[Шапка страницы]</header>
+        <div class="content">
+            <main class="main">
+                <div class="text">[Основная часть]</div>
+                <section>
+                <div class="main_section">
+                    <div class="main_item_1and2">[Ещё 1]</div>
+                    <div class="main_item_1and2">[Ещё 2]</div> 
+                    <div class="main_item_3">[Ещё 3]</div>
+                </section>
+            </main>
+            <aside class="aside">
+                <div class="text">[Боковая область]</div>
+            </aside>
+        </div>
+        <footer class="footer">
+            <p class="footer_item">[Секция футера 1]</p>
+            <p class="footer_item">[Секция футера 2]</p>
+            <p class="footer_item">[Секция футера 3]</p>
+            <p class="footer_item">[Секция футера 4]</p>
+        </footer>
+    </div>
+</body>
+</html>

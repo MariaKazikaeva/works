@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="https://www.svgrepo.com/show/394336/paw.svg" type="image/svg">
+    <title>Опросник для владельцев животных</title>
+</head>
+<body>
+<h1>Опросник для владельцев животных</h1>
+<form method="post">
+<fieldset class="name__contacts">
+   <legend class="name__contacts__legend"><b>Информация о владельце</b></legend>
+ <div>
+   <label for="ownername">ФИО владельца</label>
+   <input type="text" id="ownername"/></div>
+ <div>
+   <label for="phone">Номер мобильного телефона</label>
+   <input type="text" id="phone"/></div>
+ <div>
+   <label for="email">Электронная почта</label>
+   <input type="text" id="email"/></div>
+</fieldset>
+<fieldset class="pet__info">
+   <legend class="pet__info__legend"><b>Информация о питомце</b></legend>
+   <label for="petname">Кличка питомца</label>
+   <input type="text" id="petname"/>
+ <div>
+   <label for="breed">Порода питомца</label>
+   <select name="breed" id="breed">
+    <option value="">-- Выберите породу --</option>
+    <option value="shepard">Овчарка</option>
+    <option value="labrador">Лабрадор</option>
+    <option value="dalmation">Далматинец</option>
+    <option value="beagle">Бигль</option>
+    <option value="pomeranian">Шпиц</option>
+   </select></div>
+ <div>
+   <label for="food">Вид корма</label> <br>
+    Сухой <input type="radio" id="food"/>
+    Влажный <input type="radio"/>
+    Натуральный <input type="radio"/></div>
+ <div>
+   <label for="sex">Пол питомца</label> <br>
+   Самка <input type="radio" name="sex"/> Самец <input type="radio" name="sex" id="sex"/></div>
+   <div>
+   <label for="photo">Прикрепите фото питомца</label>
+   <input type="file" id="photo"></div>
+</fieldset>
+   <label for="comment">Комментарий владельца:</label> <br>
+   <textarea name="comment" id="comment" cols="50" rows="7"></textarea>
+ <div>
+   <input type="submit" value="Сохранить"></div>
+ </form>
+</body>
+</html>

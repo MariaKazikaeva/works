@@ -1,0 +1,13 @@
+h2 {
+    color:blue
+}
+img {
+    width: 50vw;
+}
+.menu {
+    text-decoration: none;
+    color: black;
+    padding: 5px;
+    font-weight: bolder;
+}
+
