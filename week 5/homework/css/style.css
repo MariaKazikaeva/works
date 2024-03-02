@@ -1,0 +1,84 @@
+.header,
+    .container,
+    .header__wrapper,
+    .header__logo,
+    .header__nav,
+    .header__menu menu,
+    .menu__item,
+    .menu__link,
+    .header__button {
+        display: flex
+    }
+.header__nav {
+    display: flex;
+    flex-direction: row;
+    margin: 20px;
+    width: 70vw;
+    flex-grow: 1;
+    
+}
+.header__logo {
+    display: flex;
+    height: 10vh;
+    width: 5vw;
+    justify-content: flex-start;
+    align-self: center;
+}
+.container {
+    display: flex;
+    background-color: darkcyan;
+    margin: 0 auto;
+    width: 100%;
+}
+.header__menu {
+    display: flex;
+    flex-direction: row;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-content: center;
+    margin: 20px;
+    flex-grow: 1;
+    font-size: larger;  
+}
+.menu__item {
+    display: flex;
+    background-color: mintcream;
+    height: 5vh;
+    width: 12vw;
+    align-items: center;
+    justify-content: center;
+}
+.header__button {
+    display: flex;
+    justify-content: flex-end;
+    height: 7vh;
+    width: vw;
+    background-color: goldenrod;
+    align-self: center;
+    align-items: center;
+    margin: 20px;
+}
+.name {
+    display: flex;
+    flex-direction: row;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 30px;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+#products {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 30px;
+    
+}
+.header_1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: azure;
+}
+#products:hover {
+    transform: scale(1.1);
+}
